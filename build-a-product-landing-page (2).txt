@@ -1,0 +1,328 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" />
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+	<header id="header">
+	  <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" />
+	  <nav id="nav-bar">
+		<a class="nav-link" href="#features">Features</a>
+		<a class="nav-link" href="#how-it-works">How It Works</a>
+		<a class="nav-link" href="#pricing">Pricing</a>
+	  </nav>
+	</header>
+	<form id="form" action="https://www.freecodecamp.com/email-submit">
+	  <h2>Handcrafted, home-made masterpieces</h2>
+	  <input type="email" id="email" name="email" placeholder="Enter your email address" />
+	  <input type="submit" id="submit" value="Get Started" />
+	</form>
+	<section id="features">
+		<div class="feature-list">
+			<i class="fa-solid fa-fire-flame-curved fa-3x"></i>
+			<div class="feature-item">
+				<h3>Premium Materials</h3>
+				<p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+			</div>
+			
+		</div>
+		<div class="feature-list">
+			<i class="fa-solid fa-truck fa-3x"></i>
+			<div class="feature-item">
+				<h3>Fast Shipping</h3>
+				<p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+			</div>
+		</div>
+		<div class="feature-list">
+			<i class="fa-solid fa-battery-full fa-3x"></i>
+			<div class="feature-item">
+				<h3>Quality Assurance</h3>
+				<p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+			</div>
+		</div>
+	</section>
+	<section id="how-it-works">
+	  <iframe id="video" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</section>
+	<section id="pricing">
+	  <div class="item">
+		<h4 class="heading">Tenor Trombone</h4>
+		<h4 class="price">$600</h4>
+		<p>Lorem ipsum.</p>
+		<p>Lorem ipsum.</p>
+		<p>Lorem ipsum dolor.</p>
+		<p>Lorem ipsum.</p>
+		<button class="select">Select</button>
+	  </div>
+	  <div class="item">
+		<h4 class="heading">Bass Trombone</h4>
+		<h4 class="price">$900</h4>
+		<p>Lorem ipsum.</p>
+		<p>Lorem ipsum.</p>
+		<p>Lorem ipsum dolor.</p>
+		<p>Lorem ipsum.</p>
+		<button class="select">Select</button>
+	  </div>
+	  <div class="item">
+		<h4 class="heading">Valve Trombone</h4>
+		<h4 class="price">$1200</h4>
+		<p>Plays similar to a Trumpet</p>
+		<p>Great for Jazz Bands</p>
+		<p>Lorem ipsum dolor.</p>
+		<p>Lorem ipsum.</p>
+		<button class="select">Select</button>
+	  </div>
+	</section>
+	<footer>
+	  <a>Privacy</a>
+	  <a>Terms</a>
+	  <a>Contact</a>
+	  <p>Copyright 2016. Original Trombones</p>
+	</footer>	
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+section {
+	margin-bottom: 2rem;
+}
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+	position: fixed;
+	background-color: #eee;
+}
+
+#header-img {
+	width: 25%;
+	margin-left: 30px;
+}
+
+#nav-bar {
+	padding-top: 5px;
+	margin-right: 30px;
+}
+
+#nav-bar a {
+	display: inline-block;
+	padding-right: 70px;
+	font-size: 1.3rem;
+	text-decoration: none;
+	color: black;
+}
+
+#form {
+	padding-top: 5rem;
+	text-align: center;
+	padding-bottom: 5rem;
+}
+
+input {
+	display: block;
+	margin: .5rem auto;
+}
+
+input[type="email"] {
+	width: 15rem;
+	height: 1.5rem;
+}
+
+input[type="submit"], .select {
+	background-color: yellow;
+	width: 7rem;
+	height: 2rem;
+}
+
+input[value="Get Started"] {
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+#features {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.feature-list {
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: 18rem;
+}
+
+.feature-list i {
+	padding-top: 20px;
+	width: 10px;
+	color: darkorange;
+}
+
+.feature-item {
+	display: flex;
+	flex-direction: column;
+	margin-left: 5rem;
+}
+
+.feature-item h3 {
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+.feature-item p {
+	margin-top: 0;
+	padding-top: 0;
+	padding-bottom: 2rem;
+	padding-right: 10rem;
+}
+
+#how-it-works {
+	display: flex;
+	align-items: center;
+}
+
+#video {
+	width: 560px; 
+	height: 315px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#pricing {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 2rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+.item {
+	border: 1px solid;
+	text-align: center;
+	padding-bottom: 10px;
+	height: 20rem;
+}
+
+.heading {
+	background-color: lightgray;
+	padding: 1rem;
+	margin-top: 0;
+	font-size: 1.2rem;
+}
+
+.price {
+	font-size: 1rem;
+}
+
+.select {
+	margin-top: 2rem;
+}
+
+footer {
+	background-color: #ddd;
+	width: 80%;
+	border-radius: 5px;
+	text-align: right;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+	#header {
+		padding-bottom: 0.5rem;
+	}
+	
+	#header-img {
+		width: 40%;
+		margin-left: 30px;
+	}
+	
+	#nav-bar a {
+		font-size: 1rem;
+		padding-right: 30px;
+	}
+	
+	.feature-list {
+		margin-left: 5rem;
+	}
+	
+	.feature-item p {
+		padding-right: 1rem;
+	}
+	
+	#pricing {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 2rem;
+		align-items: center;
+	}
+	
+	.item {
+		width: 20rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+	* {
+		box-sizing: border-box;
+	}
+	
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	
+	#header-img {
+		margin-left: 0;
+		height: 2rem;
+	}
+	
+	#nav-bar {
+		margin-right: 0;
+		margin-left: .5rem;
+	}
+	
+	#nav-bar a {
+		padding-right: 0;
+	}
+	
+	.feature-list {
+		margin-left: 1rem;
+	}
+	
+	#video, .item {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#pricing {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+** end of undefined **
+
